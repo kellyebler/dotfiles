@@ -9,9 +9,23 @@ source <(kubectl completion zsh)
 
 
 # program aliases
-alias cat='bat'
 alias vim='nvim'
 alias v='nvim'
+
+# Bat alias for pretty printing files
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # macOS
+  alias cat="bat"
+elif [[ "$OSTYPE" == "linux-gnu" ]]; then
+  # Linux (Ubuntu)
+  if command -v batcat &> /dev/null; then
+    alias cat="batcat"
+  else
+    alias cat="bat" # Fallback if bat is installed as bat
+  fi
+fi
+
+# ... rest of your .zshrc ...
 
 # bring up this file easily
 alias vz='nvim ~/.zprofile'
