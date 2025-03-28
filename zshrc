@@ -28,7 +28,7 @@ fi
 # ... rest of your .zshrc ...
 
 # bring up this file easily
-alias vz='nvim ~/.zprofile'
+alias vz='nvim ~/.zshrc'
 
 # cd aliases
 alias cd..='cd ..'  # common typo
@@ -39,7 +39,8 @@ alias ...='cd ../..'
 alias gst='git status'
 alias ga='git add'
 alias gc='git commit'
-
+# clear alias
+alias c='clear'
 # ls aliases
 alias ls='eza --color=always --group-directories-first --icons'
 alias ll='eza -la --icons --octal-permissions --group-directories-first'

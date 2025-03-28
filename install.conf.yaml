@@ -8,6 +8,7 @@
     ~/.zshrc: zshrc
     ~/.config/nvim/init.vim: init.vim
     ~/.config/starship.toml: starship.toml
+    ~/.ssh/config: sshconfig
 
 
 - shell:
