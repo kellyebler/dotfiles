@@ -5,11 +5,10 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zshrc
+    ~/.bashrc: bashrc
     ~/.config/nvim/init.vim: init.vim
     ~/.config/starship.toml: starship.toml
     ~/.ssh/config: sshconfig
-
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
